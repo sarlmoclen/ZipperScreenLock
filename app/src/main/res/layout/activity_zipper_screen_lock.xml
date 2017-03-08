@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	<!-- 适配各种屏幕，通过修改android:layout_width
+		和android:layout_height可测试各种尺寸的屏幕
+		的显示情况 -->
+    <com.sarlmoclen.zipperscreenlock.ZipperScreenLockView
+	    android:id="@+id/zipper"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"/>
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="from github sarlmoclen"
+		android:textColor="#666666"
+		android:lines="1"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="40dp"
+		android:textSize="13dp"
+		android:background="@drawable/sarlmoclen_logo_bg"
+		android:paddingLeft="15dp"
+		android:paddingRight="15dp"
+		android:paddingTop="8dp"
+		android:paddingBottom="8dp"/>
+
+</RelativeLayout>
