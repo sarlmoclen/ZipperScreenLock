@@ -1,2 +1,2 @@
 # ZipperScreenLock
-拉链解锁动画自定义view，修改给自己项目用的时候，只需替换资源和ZipperScreenLockView中静态变量相应的值即可。此view适配所有尺寸屏幕
+此项目为拉链解锁动画自定义view。在给自己项目用的时候，只需替换资源和ZipperScreenLockView中静态变量相应的值即可。此view适配所有尺寸屏幕。
