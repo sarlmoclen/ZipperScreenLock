@@ -168,12 +168,14 @@ public class ZipperScreenLockView extends View {
 		if(isTouch){
 			if((yTouch-moveY) > 0){
 				//背景图片移动状态的绘制
-				Rect mSrcRectBg = new Rect(0, 0, mBitmapBg.getWidth(), mBitmapBg.getHeight());  
-				Rect mDestRectBg = new Rect(0
-						, 0
-						, (int)wSize
-						, (int)hSize); 
-				canvas.drawBitmap(mBitmapBg, mSrcRectBg, mDestRectBg, mPaint);
+				if(isShowBg) {
+					Rect mSrcRectBg = new Rect(0, 0, mBitmapBg.getWidth(), mBitmapBg.getHeight());
+					Rect mDestRectBg = new Rect(0
+							, 0
+							, (int) wSize
+							, (int) hSize);
+					canvas.drawBitmap(mBitmapBg, mSrcRectBg, mDestRectBg, mPaint);
+				}
 				//新建图层
 				int  i = 0;
 				if(isShowBg){
@@ -226,13 +228,6 @@ public class ZipperScreenLockView extends View {
 	* from github sarlmoclen
 	 */
 	private void initState(Canvas canvas){
-		//背景图片初始状态的绘制
-		Rect mSrcRectBg = new Rect(0, 0, mBitmapBg.getWidth(), mBitmapBg.getHeight());  
-		Rect mDestRectBg = new Rect(0
-				, 0
-				, (int)wSize
-				, (int)hSize); 
-		canvas.drawBitmap(mBitmapBg, mSrcRectBg, mDestRectBg, mPaint);
 		//拉链背景图片初始状态的绘制
 		Rect mSrcRectZipperBg = new Rect(0, 0, mBitmapZipperBg.getWidth(), mBitmapZipperBg.getHeight());  
 		Rect mDestRectZipperBg = new Rect(0
